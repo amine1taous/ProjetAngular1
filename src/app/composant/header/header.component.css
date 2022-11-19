@@ -71,3 +71,7 @@ a:hover {
   justify-content: space-between;
   padding-top: 20px;
 }
+.actif {
+  color: yellow;
+  font-weight: bold;
+}

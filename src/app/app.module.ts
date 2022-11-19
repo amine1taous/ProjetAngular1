@@ -11,6 +11,8 @@ import { AproposComponent } from './composant/apropos/apropos.component';
 import { HeaderComponent } from './composant/header/header.component';
 import { FooterComponent } from './composant/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LivraisonComponent } from './composant/livraison/livraison.component';
+import { PromotionComponent } from './composant/promotion/promotion.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
     ListproduitComponent,
     AproposComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LivraisonComponent,
+    PromotionComponent
   ],
   imports: [
     BrowserModule,
