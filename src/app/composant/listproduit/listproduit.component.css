@@ -1,0 +1,30 @@
+.granddiv {
+  height: 2500px;
+}
+.gdiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* .div {
+  position: relative;
+  width: 70%;
+} */
+ul li {
+  list-style-type: none;
+}
+.box {
+  margin-top: 30px;
+  padding: 5px;
+  height: 550px;
+}
+.image {
+  background-color: grey;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease 0s;
+  display: flex;
+  border: 1.5px solid black;
+  box-shadow: 0 20px 2px 0 rgb(196, 196, 196);
+  margin-left: 30px;
+}

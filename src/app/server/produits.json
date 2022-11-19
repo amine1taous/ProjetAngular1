@@ -1,0 +1,14 @@
+{
+    "produits":[
+        {"id":1,"libelle":"Café","image":"assets/fromage.jpg","prix":10,"disponibilite":true,"dateFabrication":"14/07/2022","categorie":"cafe","quantite":7,"commentaire":[{"nom":"","description":""}]},
+        {"id":2,"libelle":"aadzdaz","image":"assets/fromage.jpg","prix":2542,"disponibilite":false,"dateFabrication":"01/02/2022","categorie":"zfedf","quantite":200,"commentaire":[{"nom":"","description":""}]},
+        {"id":3,"libelle":"fazf","image":"assets/fromage.jpg","prix":252,"disponibilite":true,"dateFabrication":"14/08/2022","categorie":"rzh","quantite":85,"commentaire":[{"nom":"","description":""}]},
+        {"id":4,"libelle":"arg","image":"assets/fromage.jpg","prix":87,"disponibilite":false,"dateFabrication":"14/09/2022","categorie":"cahrehfe","quantite":5855,"commentaire":[{"nom":"","description":""}]},
+        {"id":6,"libelle":"ehthe","image":"assets/fromage.jpg","prix":868,"disponibilite":false,"dateFabrication":"14/01/2022","categorie":"caethtfe","quantite":8657,"commentaire":[{"nom":"","description":""}]},
+        {"id":7,"libelle":"ehthe","image":"assets/fromage.jpg","prix":868,"disponibilite":false,"dateFabrication":"14/01/2022","categorie":"caethtfe","quantite":8657,"commentaire":[{"nom":"","description":""}]},
+        {"id":8,"libelle":"ehthe","image":"assets/fromage.jpg","prix":868,"disponibilite":false,"dateFabrication":"14/01/2022","categorie":"caethtfe","quantite":8657,"commentaire":[{"nom":"","description":""}]},
+        {"id":9,"libelle":"ehthe","image":"assets/fromage.jpg","prix":868,"disponibilite":false,"dateFabrication":"14/01/2022","categorie":"caethtfe","quantite":8657,"commentaire":[{"nom":"","description":""}]},
+        {"id":10,"libelle":"ehthe","image":"assets/fromage.jpg","prix":868,"disponibilite":false,"dateFabrication":"14/01/2022","categorie":"caethtfe","quantite":8657,"commentaire":[{"nom":"","description":""}]},
+        {"id":11,"libelle":"ehthe","image":"assets/fromage.jpg","prix":868,"disponibilite":false,"dateFabrication":"14/01/2022","categorie":"caethtfe","quantite":8657,"commentaire":[{"nom":"","description":""}]}
+    ]
+}

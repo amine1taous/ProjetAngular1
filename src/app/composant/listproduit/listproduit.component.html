@@ -1,0 +1,46 @@
+<div class="granddiv">
+  <h2 class="title" style="padding-left: 22px; color: orange">Nos produits</h2>
+  <div class="row" style="margin-bottom: 3px">
+    <ul class="gdiv">
+      <li *ngFor="let prod of lesProduits$ | async" class="col-sm-4">
+        <div class="card box image" style="width: 18rem">
+          <img
+            [src]="prod.image"
+            class="card-img-top p-2"
+            height="250px"
+            width="900px"
+          />
+          <h4 class="card-title">
+            {{ prod.libelle }}
+          </h4>
+          <p class="card-text">Prix:{{ prod.prix }} Dt</p>
+          <span
+            class="badge text-bg-warning m-4"
+            *ngIf="prod.disponibilite == true"
+          >
+            disponible
+          </span>
+          <span
+            class="badge text-bg-warning m-4"
+            *ngIf="prod.disponibilite == false"
+          >
+            Repture de stock
+          </span>
+          <span class="badge text-bg-secondary m-4"> Commander </span>
+          <button
+            type="button"
+            class="btn btn-primary container"
+            [routerLink]="['/produit', prod.id]"
+          >
+            Details
+          </button>
+        </div>
+
+        <!-- {{ prod.id }} -- -- {{ prod.disponibilite }} --
+      {{ prod.dateFabrication }} -- {{ prod.categorie }} --
+      {{ prod.quantite }} -- -->
+      </li>
+    </ul>
+  </div>
+</div>
+<button class="btn btn-sucess">Page suivante</button>

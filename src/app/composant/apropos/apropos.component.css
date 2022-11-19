@@ -1,0 +1,24 @@
+div {
+  display: flex;
+  justify-content: space-between;
+}
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  margin-top: 50px;
+  margin-left: 145px;
+  margin-bottom: -35px;
+}
+h4 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+}
+p {
+  font-family: "ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+img {
+  height: 150px;
+}
