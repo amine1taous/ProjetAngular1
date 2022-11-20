@@ -3,6 +3,7 @@ import { Commentaire } from '../classes/commentaire';
 import { Produit } from '../classes/produit';
 import{HttpClient} from '@angular/common/http'
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 const URL = 'http://localhost:3000/produits'
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,9 @@ export class ProduitService {
   getProduits(): Observable<Produit[]>{
     return this.http.get<Produit[]>(URL);
   }
-  addproduit(p: Produit): Observable<Produit>{
-    return this.http.post<Produit>(URL, p);
-  }
+  // addproduit(p: Produit): Observable<Produit>{
+  //   return this.http.post<Produit>(URL, p);
+  // }
+
+  
 }

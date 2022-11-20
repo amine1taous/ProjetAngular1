@@ -1,1 +1,49 @@
-<p>promotion works!</p>
+<div class="granddiv">
+  <h2 class="title" style="padding-left: 22px; color: orange">
+    Nos produits avec livraison
+  </h2>
+  <div class="row" style="margin-bottom: 3px">
+    <ul class="gdiv">
+      <ng-container
+        *ngFor="let prod of lesProduitsPromo | async"
+        class="col-sm-4"
+      >
+        <li *ngIf="prod.promotion == false">
+          <div class="card box image" style="width: 18rem">
+            <img
+              [src]="prod.image"
+              class="card-img-top p-2"
+              height="250px"
+              width="900px"
+            />
+            <h4 class="card-title">
+              {{ prod.libelle }}
+            </h4>
+            <p class="card-text">Prix:{{ prod.prix }} Dt</p>
+            <span
+              class="badge text-bg-warning m-4"
+              *ngIf="prod.disponibilite == true"
+            >
+              disponible
+            </span>
+            <span
+              class="badge text-bg-warning m-4"
+              *ngIf="prod.disponibilite == false"
+            >
+              Repture de stock
+            </span>
+            <span class="badge text-bg-secondary m-4"> Commander </span>
+            <button
+              type="button"
+              class="btn btn-primary container"
+              [routerLink]="['/produit', prod.id]"
+            >
+              Details
+            </button>
+          </div>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>
+<button class="btn btn-sucess">Page suivante</button>

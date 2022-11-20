@@ -9,6 +9,8 @@ export class Produit {
         public dateFabrication: Date,
         public categorie: string,
         public quantite: number,
-        public commentaire?: Commentaire[] 
+        public promotion:boolean,
+        public commentaire?: Commentaire[],
+        
     ) { }
 }
