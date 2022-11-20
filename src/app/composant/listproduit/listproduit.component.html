@@ -13,7 +13,7 @@
           <h4 class="card-title">
             {{ prod.libelle }}
           </h4>
-          <p class="card-text">Prix:{{ prod.prix }} Dt</p>
+          <p class="card-text">Prix:{{ prod.prix | number: "0.3" }} Dinars</p>
           <span
             class="badge text-bg-warning m-4"
             *ngIf="prod.disponibilite == true"
@@ -35,12 +35,10 @@
             Details
           </button>
         </div>
-
-        <!-- {{ prod.id }} -- -- {{ prod.disponibilite }} --
-      {{ prod.dateFabrication }} -- {{ prod.categorie }} --
-      {{ prod.quantite }} -- -->
       </li>
     </ul>
   </div>
 </div>
-<button class="btn btn-sucess">Page suivante</button>
+<button class="btn btn-danger" style="padding: 15px; margin: 10px">
+  Page suivante
+</button>

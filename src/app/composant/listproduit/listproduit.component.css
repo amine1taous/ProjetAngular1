@@ -1,5 +1,5 @@
 .granddiv {
-  height: 2500px;
+  height: max-content;
 }
 .gdiv {
   display: flex;
@@ -16,16 +16,16 @@ ul li {
   height: 550px;
 }
 /* .box:hover {
-    height: 600px;
-    width: 250px;
-  } */
+  height: 600px;
+  width: 250px;
+} */
 .image {
-  background-color: grey;
+  background-color: rgb(235, 235, 235);
   border-radius: 5px;
   overflow: hidden;
   transition: box-shadow 0.2s ease 0s;
   display: flex;
   border: 1.5px solid black;
-  box-shadow: 0 20px 2px 0 rgb(196, 196, 196);
+  box-shadow: 10px 10px 2px 0 rgb(235, 232, 232);
   margin-left: 30px;
 }

@@ -1,5 +1,5 @@
 .granddiv {
-  height: 1000px;
+  height: max-content;
 }
 .gdiv {
   display: flex;

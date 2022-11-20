@@ -8,7 +8,7 @@
         *ngFor="let prod of lesProduitsPromo | async"
         class="col-sm-4"
       >
-        <li *ngIf="prod.promotion == false">
+        <li *ngIf="prod.promotion == true">
           <div class="card box image" style="width: 18rem">
             <img
               [src]="prod.image"
@@ -19,7 +19,7 @@
             <h4 class="card-title">
               {{ prod.libelle }}
             </h4>
-            <p class="card-text">Prix:{{ prod.prix }} Dt</p>
+            <p class="card-text">Prix:{{ prod.prix | number: "0.3" }} Dt</p>
             <span
               class="badge text-bg-warning m-4"
               *ngIf="prod.disponibilite == true"
