@@ -9,7 +9,7 @@ import { ErreurComponent } from './composant/erreur/erreur.component';
 import { ListproduitComponent } from './composant/listproduit/ListproduitComponent';
 import { AproposComponent } from './composant/apropos/apropos.component';
 import { HeaderComponent } from './composant/header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './composant/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 // import { LivraisonComponent } from './composant/livraison/livraison.component';
 import { PromotionComponent } from './composant/promotion/promotion.component';

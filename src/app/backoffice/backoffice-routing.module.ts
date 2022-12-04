@@ -9,10 +9,11 @@ import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
-    path: 'admin',component:DashboardAdminComponent, children:[
+    path: 'admin', children:[
       { path: 'acceuil', component: AcceuiladminComponent },
       { path: 'logout', component: LoginComponent },
-      { path: '', component: DashboardAdminComponent },
+      {path: 'Dashboard',component:DashboardAdminComponent},
+      { path: '', component: LoginComponent },
       {path:'ListeProduit',component:InterfacesuperUserComponent},
       { path: '**', component: ErreurComponent }
   ]}

@@ -3,12 +3,25 @@
     <h2 style="font-family: Nerko One; font-weight: bold; text-align: center">
       Login Form
     </h2>
-    <form style="padding-left: 10px">
-      <input type="text" placeholder="Entrer le login" /><br />
-      <input type="password" placeholder="Saisir votre mot de passe" /><br />
+    <form
+      style="padding-left: 10px"
+      formGroup="loginform"
+      (onSubmit)="onSubmit()"
+    >
+      <input
+        type="text"
+        placeholder="Entrer le login"
+        formControlName="login"
+      /><br />
+      <input
+        type="password"
+        placeholder="Saisir votre mot de passe"
+        formControlName="pwd"
+      /><br />
       <button class="btn btn-outline-info" style="margin-left: 95px">
         Sign In
       </button>
+      {{ message }}
     </form>
     <span
       style="
