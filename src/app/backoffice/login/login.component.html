@@ -3,11 +3,7 @@
     <h2 style="font-family: Nerko One; font-weight: bold; text-align: center">
       Login Form
     </h2>
-    <form
-      style="padding-left: 10px"
-      formGroup="loginform"
-      (onSubmit)="onSubmit()"
-    >
+    <form style="padding-left: 10px" [formGroup]="loginform">
       <input
         type="text"
         placeholder="Entrer le login"
@@ -18,7 +14,11 @@
         placeholder="Saisir votre mot de passe"
         formControlName="pwd"
       /><br />
-      <button class="btn btn-outline-info" style="margin-left: 95px">
+      <button
+        class="btn btn-outline-info"
+        (click)="onSubmit()"
+        style="margin-left: 95px"
+      >
         Sign In
       </button>
       {{ message }}

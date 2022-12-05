@@ -12,10 +12,14 @@ const routes: Routes = [
     path: 'admin', children:[
       { path: 'acceuil', component: AcceuiladminComponent },
       { path: 'logout', component: LoginComponent },
-      {path: 'Dashboard',component:DashboardAdminComponent},
-      { path: '', component: LoginComponent },
-      {path:'ListeProduit',component:InterfacesuperUserComponent},
-      { path: '**', component: ErreurComponent }
+      {
+        path: '', component: LoginComponent, children: [
+          { path: 'dashboard', component:DashboardAdminComponent },
+          { path: 'produits', component: InterfacesuperUserComponent },
+          {path:'',redirectTo:'dashboard',pathMatch:'full'}
+      ]},
+      // {path:'ListeProduit',component:InterfacesuperUserComponent},
+      // { path: '**', component: ErreurComponent }
   ]}
 ];
 

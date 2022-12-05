@@ -12,7 +12,7 @@
     <h3>Ajouter un produit</h3>
     <a href="#" class="cross">&times;</a>
     <!--  -->
-    <form formGroup="produitForm" (ngSubmit)="ajouter()">
+    <form [formGroup]="produitForm" (ngSubmit)="ajouter()">
       <label> Donnez le nom du produit</label>
       <input class="form-control" type="text" formControlName="libelle" />
       <br />
@@ -43,7 +43,7 @@
 <div class="popup">
   <h3>modifier mroduit</h3>
   <!--  -->
-  <form formGroup="produitForm">
+  <form [formGroup]="produitForm">
     <label> Donnez le nom du produit</label>
     <input class="form-control" type="text" formControlName="libelle" />
     <br />

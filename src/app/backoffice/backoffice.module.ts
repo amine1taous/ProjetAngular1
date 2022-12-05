@@ -7,6 +7,7 @@ import { InterfacesuperUserComponent } from './interfacesuper-user/interfacesupe
 import { LoginComponent } from './login/login.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { AcceuiladminComponent } from './acceuiladmin/acceuiladmin.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AcceuiladminComponent } from './acceuiladmin/acceuiladmin.component';
   ],
   imports: [
     CommonModule,
-    BackofficeRoutingModule
+    BackofficeRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class BackofficeModule { }

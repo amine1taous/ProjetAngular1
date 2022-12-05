@@ -22,12 +22,14 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     this.authService.login(this.loginform.value['login'], this.loginform.value['pwd']).subscribe(user =>
     {
-      if (user.length = 0) {
-        this.message = "Authentification incorrect!!!";
-        this.loginform.reset();
+      if (user.id >= 0) {
+        
+        this.router.navigate(['admin/Dashboard']);
+      
       }
       else {
-        this.router.navigate(['admin/Dashboard']);
+        this.message = "Authentification incorrect!!!";
+        this.loginform.reset();
       }
     }
     )
